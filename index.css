@@ -1,0 +1,41 @@
+body {
+  background-color: #5d99c6;
+  color: #f0ffff;
+}
+.contents {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+
+h1 {
+  font-size: 60px;
+}
+.greetings,
+.form {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  /* 절대 위치 지정 요소 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadein 0.5s linear;
+}
